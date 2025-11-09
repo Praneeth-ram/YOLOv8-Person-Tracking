@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  person-tracker:
+    build: .
+    image: person-tracking:cpu
+    container_name: person-tracker
+    volumes:
+      - ./data:/workspace/data
+    command: [
+      "python", "main.py",
+      "--source", "data/sample_videos/people-detection.mp4",
+      "--output", "data/output_videos/people-detection-tracked.mp4",
+      "--device", "cpu"
+    ]

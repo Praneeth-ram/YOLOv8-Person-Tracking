@@ -1,0 +1,8 @@
+ultralytics==8.2.0
+opencv-python-headless==4.7.0.72
+numpy
+pandas
+motmetrics
+torch==2.3.1+cpu
+torchvision==0.18.1+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
