@@ -37,3 +37,14 @@ data/MOT17-04/mot17-04.mp4
 
 # Streamlit cache (if added later)
 .streamlit/
+
+# Data and outputs
+data/*.mp4
+data/**/*.mp4
+data/**/*.avi
+data/**/*.jpg
+data/**/*.png
+data/**/*.csv
+data/MOT17-04/
+data/sample_videos/
+data/output_videos/
