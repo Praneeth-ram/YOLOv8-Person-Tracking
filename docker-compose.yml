@@ -9,7 +9,7 @@ services:
       - ./data:/workspace/data
     command: [
       "python", "main.py",
-      "--source", "data/sample_videos/people-detection.mp4",
-      "--output", "data/output_videos/people-detection-tracked.mp4",
+      "--source", "data/MOT17-04/mot17-04.mp4",
+      "--output", "data/output_videos/mot17-04-tracked.mp4",
       "--device", "cpu"
     ]

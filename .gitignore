@@ -1,48 +1,39 @@
-# ---- Python ----
+# Python
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-*.so
+.Python
 
-# ---- Virtual Environments ----
-venv/
-env/
+# Environment
+.env
 .venv/
-.env/
+env/
+venv/
 
-# ---- IDE / Editor Files ----
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# ---- Logs and Outputs ----
+# Logs and cache
 *.log
-*.out
-*.err
+data/logs/
+*.csv
 
-# ---- YOLO / Model Files ----
+# Model weights
 *.pt
-*.onnx
-runs/
-results/
-*.yaml
+*.pth
 
-# ---- Videos and Images ----
-data/sample_videos/
+# Videos and images
 data/output_videos/
-*.avi
-*.mp4
-*.png
-*.jpg
-*.jpeg
+data/sample_videos/
+data/MOT17-04/mot17-04.mp4
 
-# ---- OS Specific ----
-.DS_Store
-Thumbs.db
-
-# ---- Docker Cache ----
+# Docker
+*.pid
 *.tar
 *.bak
-*.tmp
+*.swp
+
+# VS Code
+.vscode/
+.idea/
+
+# Streamlit cache (if added later)
+.streamlit/
