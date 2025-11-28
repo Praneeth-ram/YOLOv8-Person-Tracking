@@ -28,6 +28,7 @@ def main():
         show=False,
         stream=False,
         conf=0.4,
+        classes=[0],  # Only track persons (class 0)
         save=True,
         project=os.path.dirname(args.output),
         name=os.path.basename(args.output).replace(".mp4", ""),
