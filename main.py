@@ -24,7 +24,8 @@ def main():
     results = model.track(
         source=args.source,
         device=args.device,
-        classes=[0],     # PERSON ONLY
+        classes=[0], 
+        imgsz=1280,       # PERSON ONLY
         conf=0.1,        # Lower conf to detect small distant persons
         stream=True,     # Read frame-by-frame
         tracker="bytetrack.yaml"
